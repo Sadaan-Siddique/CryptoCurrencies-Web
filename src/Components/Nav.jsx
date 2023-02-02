@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../App.css'
 function Nav() {
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
-                    <Link className="lnk navbar-brand" to="/">ReactRouter</Link>
+                    <Link className="lnk navbar-brand" to="/"><span className='display-5 fw-bold' style={{ color: 'red' }}>C</span><span className='h5' style={{ position: 'relative', bottom: '10px' }}>RYPTOS</span></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -15,7 +16,7 @@ function Nav() {
                                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="products">Products</Link>
+                                <Link className="nav-link" to="coins">CryptoCoins</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="services">Services</Link>

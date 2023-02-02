@@ -17,8 +17,8 @@ function AxiosCoinGecko() {
       <table className='table'>
         <thead>
           <tr className=' h5'>
-            <th style={{marginLeft:'30px'}} className=''>#</th>
-            <th style={{marginRight:'10px'}} className=''>Coin</th>
+            <th style={{ marginLeft: '30px' }} className=''>#</th>
+            <th style={{ marginRight: '10px' }} className=''>Coin</th>
             <th>Price</th>
             <th>1d</th>
             <th>7d</th>
@@ -31,7 +31,6 @@ function AxiosCoinGecko() {
         <tbody>
           {coinData.map((item) => {
             return (<>
-              
               <tr>
                 <td>{num}</td>
                 <td className='fw-bold'><img className='me-2' style={{ width: '25px' }} src={item.image.thumb} alt="coinImg" />{item.id}</td>
