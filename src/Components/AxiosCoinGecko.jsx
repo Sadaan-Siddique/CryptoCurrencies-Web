@@ -17,8 +17,8 @@ function AxiosCoinGecko() {
       <table className='table'>
         <thead>
           <tr className=' h5'>
-            <th className=''>#</th>
-            <th style={{marginRight:'0px'}} className=''>Coin</th>
+            <th style={{marginLeft:'30px'}} className=''>#</th>
+            <th style={{marginRight:'10px'}} className=''>Coin</th>
             <th>Price</th>
             <th>1d</th>
             <th>7d</th>
