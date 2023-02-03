@@ -13,19 +13,19 @@ function AxiosCoinGecko() {
   });
   return (
     <>
-      <h1 className='my-3 display-2 fw-bold text-center'>Currency Data</h1>
+      <h4 className='my-3 fw-bold text-center'><span className='display-2 fw-bold' style={{ color: 'red' }}>C</span><span style={{ position: 'relative', bottom: '14px' }}>RYPTO</span><span className='display-2 fw-bold ms-1' style={{ color: 'red' }}>C</span><span style={{ position: 'relative', bottom: '13.7px' }}>URRENCIES</span></h4>
       <table className='table'>
         <thead>
           <tr className=' h5'>
             <th style={{ marginLeft: '30px' }} className=''>#</th>
-            <th style={{ marginRight: '10px' }} className=''>Coin</th>
-            <th>Price</th>
-            <th>1d</th>
-            <th>7d</th>
-            <th>1y</th>
-            <th>24h Volume</th>
-            <th>Mkt Cap</th>
-            <th>Last 7 Days</th>
+            <th style={{ marginRight: '10px' }} className=''>C<span>oin</span></th>
+            <th>P<span>rice</span></th>
+            <th>1<span>d</span></th>
+            <th>7<span>d</span></th>
+            <th>1<span>y</span></th>
+            <th>2<span>4h Volume</span></th>
+            <th>M<span>kt Cap</span></th>
+            <th>L<span>ast 7 Days</span></th>
           </tr>
         </thead>
         <tbody>

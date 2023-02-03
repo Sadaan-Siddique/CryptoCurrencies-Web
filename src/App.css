@@ -1,51 +1,105 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
+
 /* Navbar */
 nav {
-    background: transparent;
-    padding: 0px;
-  }
-  
-  nav div .lnk {
-    letter-spacing: 1px;
-    transition: all;
-    transition-duration: 0.5s;
-  }
-  
-  nav div .lnk:hover {
-    letter-spacing: 0px;
-  }
-  
-  nav div div ul {
-    margin-left: 20%;
-    font-weight: bold;
-  }
-  
-  nav div div ul li {
-    letter-spacing: 1px;
-    transition: all;
-    transition-duration: 0.5s;
-  }
-  
-  nav div div ul li:hover {
-    letter-spacing: 0px;
-  }
-  /* Main */
-  
+  background: transparent;
+  padding: 20px;
+}
+
+nav div .lnk {
+  letter-spacing: 1px;
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+nav div .lnk:hover {
+  letter-spacing: 0px;
+}
+
+nav div div ul {
+  margin-left: 20%;
+  font-weight: bold;
+}
+
+nav div div ul li::first-letter {
+  font-size: 30px;
+  color: red;
+}
+
+nav div div ul li span {
+  font-size: 15px;
+  position: relative;
+  bottom: 5px;
+  color: white;
+}
+
+nav div div ul li {
+  letter-spacing: 1px;
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+nav div div ul li:hover {
+  letter-spacing: 0px;
+}
+
+nav div div form .nav-btn {
+  border: 2px solid red;
+  color: white;
+  transition: all;
+  letter-spacing: 0.8px;
+  transition-duration: 0.7s;
+  font-weight: bolder;
+}
+
+nav div div form .nav-btn:hover {
+  letter-spacing: 0.2px;
+  background-color: white;
+  color: red;
+}
+
+/* Main */
+
 .div1 {
-    /* border: 2px solid red; */
-    height: 92vh;
-    background-color: black;
-    padding-top: 11%;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('./images/CryptoBackground.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 91vh;
-  }
-  
-  .div1 div {
-    /* text-align: center; */
-    /* border: 2px solid red; */
-    padding-left: 50px;
-  }
+  /* border: 2px solid red; */
+  height: 92vh;
+  background-color: black;
+  padding-top: 11%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('./images/CryptoBackground.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 91vh;
+}
+
+.div1 div {
+  /* text-align: center; */
+  /* border: 2px solid red; */
+  padding-left: 50px;
+}
+.div1 div .nav-btn{
+  border: 2px solid red;
+  color: rgba(255, 255, 255, 0.692);
+  transition: all;
+  letter-spacing: 0.8px;
+  transition-duration: 0.7s;
+  letter-spacing: 0.8px;
+  font-weight: bold;
+}
+.div1 div .nav-btn:hover{
+  letter-spacing: 0.2px;
+  background-color: white;
+  color: red;
+}
+/* Crypto Coins  */
+table thead tr th::first-letter{
+  font-size: xx-large;
+
+}
+table thead tr th span{
+  font-size: 17px;
+  position: relative;
+  bottom: 6px;
+  color: red;
+}

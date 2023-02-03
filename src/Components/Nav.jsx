@@ -13,17 +13,17 @@ function Nav() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                                <Link className="nav-link active" aria-current="page" to="/">H<span>ome</span></Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="coins">CryptoCoins</Link>
+                                <Link className="nav-link" to="coins">C<span>ryptoCoins</span></Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="services">Services</Link>
+                                <Link className="nav-link" to="services">S<span>ervices</span></Link>
                             </li>
                             <li className="nav-item dropdown">
                                 <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
+                                    D<span>ropdown</span>
                                 </Link>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><Link className="dropdown-item" to="/products">Action</Link></li>
@@ -35,7 +35,7 @@ function Nav() {
                         </ul>
                         <form className="d-flex">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <Link className="btn btn-outline-light fw-bold" to="/">Search</Link>
+                            <Link className="nav-btn btn " to="/">Search</Link>
                         </form>
                     </div>
                 </div>
