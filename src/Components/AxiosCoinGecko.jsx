@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 function AxiosCoinGecko() {
   const [coinData, setCoinData] = useState([]);
   useEffect(() => {
-    axios.get('https://api.coingecko.com/api/v3/coins').then((res) => {
+    axios.get('https://api.coingecko.com/api/v3/coins/list').then((res) => {
       setCoinData(res.data);
-      // console.log(res.data[0].id);
+      console.log(res.data);
     }).catch((err) => {
       console.log(err)
     })
@@ -19,29 +19,23 @@ function AxiosCoinGecko() {
         <thead>
           <tr className=' h5'>
             <th style={{ marginLeft: '30px' }} className=''>#</th>
-            <th style={{ marginRight: '10px' }} className=''>C<span>oin</span></th>
-            <th>P<span>rice</span></th>
-            <th>1<span>d</span></th>
-            <th>7<span>d</span></th>
-            <th>1<span>y</span></th>
-            <th>2<span>4h Volume</span></th>
-            <th>M<span>kt Cap</span></th>
-            <th>L<span>ast 7 Days</span></th>
+            <th style={{ marginRight: '10px' }} className=''>C<span>oin ID</span></th>
+            <th>S<span>ymbol</span></th>
+            <th>N<span>ame</span></th>
+            {/* <th>G<span>raph</span></th> */}
           </tr>
         </thead>
         <tbody>
           {coinData.map((item, index) => {
             return (<>
               <tr>
-                <td>{index + 1}</td>
-                <td className='fw-bold'><Link to={`/coinmain`} className='text-decoration-none text-dark fw-bold' style={{marginTop:'20px'}}><img className='me-2' style={{ width: '25px' }} src={item.image.thumb} alt="coinImg" />{item.id}</Link></td>
-                <td>${item.market_data.current_price.usd}</td>
-                <td>{item.market_data.price_change_percentage_24h}</td>
-                <td>{item.market_data.price_change_percentage_7d}</td>
-                <td>{item.market_data.price_change_percentage_1y}</td>
-                <td>{item.market_data.total_volume.usd}</td>
-                <td>${item.market_data.market_cap_change_percentage_24h_in_currency.usd}</td>
-                <td><img src={`https://www.coingecko.com/coins/${index + 1}/sparkline`} alt="graph" /></td>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-dot" viewBox="0 0 16 16">
+                  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                </svg>{index + 1}</td>
+                <td className='fw-bold text-capitalize'><Link to={`/coinmain/${item.id}`} className='text-decoration-none text-dark fw-bold' style={{ marginTop: '20px' }}>{item.id}</Link></td>
+                <td>${item.symbol}</td>
+                <td>{item.name}</td>
+                {/* <td><img src={`https://www.coingecko.com/coins/1/sparkline`} alt="graph" /></td> */}
               </tr>
             </>)
           })}

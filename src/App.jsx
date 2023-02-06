@@ -15,7 +15,7 @@ function App() {
         <Route path='/' element={<Main />} />
         <Route path='coins' element={<AxiosCoinGecko />} />
         <Route path='coinmain' element={<CoinMain />}>
-          <Route path='coindata' element={<CoinData />} />
+          <Route path=':coindata' element={<CoinData />} />
         </Route>
 
       </Routes>

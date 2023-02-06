@@ -3,7 +3,6 @@ import { Outlet } from 'react-router-dom'
 function CoinMain() {
     return (
         <>
-            <div>CoinMain</div>
             <Outlet/>
         </>
     )
