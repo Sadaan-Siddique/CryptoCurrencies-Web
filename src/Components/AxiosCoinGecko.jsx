@@ -14,7 +14,7 @@ function AxiosCoinGecko() {
   }, []);
   return (
     <>
-      <h4 className='my-3 fw-bold text-center'><span className='display-2 fw-bold' style={{ color: 'red' }}>C</span><span style={{ position: 'relative', bottom: '14px' }}>RYPTO</span><span className='display-2 fw-bold ms-1' style={{ color: 'red' }}>C</span><span style={{ position: 'relative', bottom: '13.7px' }}>URRENCIES</span></h4>
+      <h4 className='my-3 fw-bold text-center'><span className='display-2 fw-bold' style={{ color: 'red' }}>C</span><span>RYPTO</span><span className='display-2 fw-bold ms-1' style={{ color: 'red' }}>C</span><span>URRENCIES</span></h4>
       <table className='table'>
         <thead>
           <tr className=' h5'>

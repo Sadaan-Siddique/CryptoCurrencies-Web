@@ -31,8 +31,6 @@ nav div div ul li::first-letter {
 
 nav div div ul li span {
   font-size: 15px;
-  position: relative;
-  bottom: 5px;
   color: white;
 }
 
@@ -98,8 +96,6 @@ table thead tr th::first-letter{
 
 }
 table thead tr th span{
-  font-size: 17 px;
-  position: relative;
-  bottom: 6px;
+  font-size: 17px;
   color: red;
 }

@@ -34,26 +34,26 @@ function CoinData() {
           <td className='h3'>Name : </td>
           <td> <h1 className='fw-bold'>{coin.name}</h1> </td>
         </tr>
-        <tr>
+        {/* <tr>
           <td className='h3'> URL : </td>
-          <td> <a className='fw-bold btn btn-outline-dark' href={coin.links.blockchain_site[0]} target={'_blank'}>Web URL</a> </td>
-        </tr>
-        <tr>
+          <td> <a className='fw-bold btn btn-outline-dark' href={coin.links ? coin.links.blockchain_site[0] : coin.links.blockchain_site} target={'_blank'}>Web URL</a> </td>
+        </tr> */}
+        {/* <tr>
           <td className='h3'>Price : </td>
           <td> <h1 className='fw-bold'>{coin.market_data.current_price.usd}</h1> </td>
-        </tr>
-        <tr>
+        </tr> */}
+        {/* <tr>
           <td className='h3'>Price Change '1d': </td>
           <td> <h1 className='fw-bold'>{coin.market_data.price_change_percentage_24h}</h1> </td>
-        </tr>
-        <tr>
+        </tr> */}
+        {/* <tr>
           <td className='h3'>Price Change '7d': </td>
           <td> <h1 className='fw-bold'>{coin.market_data.price_change_percentage_7d}</h1> </td>
         </tr>
         <tr>
           <td className='h3'>Price Change '1y' : </td>
           <td> <h1 className='fw-bold'>{coin.market_data.price_change_percentage_1y}</h1> </td>
-        </tr>
+        </tr> */}
       </table>
     </>
   )
