@@ -15,7 +15,7 @@ function CoinData() {
     }).then((err) => {
       console.log(err);
     })
-  }, []);
+  }, [url]);
 
   return (
     <>
